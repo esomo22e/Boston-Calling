@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang='en' style='height: auto;'>
+    <head>
+        <title>The Boston Globe - graphic</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no'>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+        <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+        <meta http-equiv='Pragma' content='no-cache' />
+        <meta http-equiv='Expires' content='0' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <script type='text/javascript'>
+            // https://github.com/filamentgroup/loadJS
+            !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+        </script>
+
+        <style>
+            *{-moz-box-sizing:border-box;box-sizing:border-box}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body,html{height:100%}a img{border:none}blockquote{quotes:none}blockquote:after,blockquote:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}body{font-family:Georgia,Times New Roman,Times,serif;line-height:1.6}a{transition:color .1s;color:#59889d;text-decoration:none}a:active,a:focus,a:hover{color:#334f5b;text-decoration:none}.source-and-credit{clear:both;width:100%;overflow:hidden;margin-top:1em}.source-and-credit p{line-height:1.6;padding:0;margin:0;font-size:11px;text-align:left;float:none}.source-and-credit .source span{font-weight:700}.source-and-credit .credit span{color:#999;text-transform:uppercase;letter-spacing:.05em}@media (min-width:600px){.source-and-credit .source{float:left}.source-and-credit .credit{text-align:right;float:right}}
+        </style>
+
+        <!-- UPDATE VERSION # IF YOU NEED TO REPUBLISH -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" /
+          integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+          crossorigin=""/>
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+        <!-- <link rel="stylesheet" href="css/leaflet.awesome-markers.css"> -->
+        <link rel="stylesheet" href="leaflet.awesome-markers.css" />
+        <link rel='stylesheet' href='main.css?xxx' />
+
+        <link rel='shortcut icon' href='https://www.bostonglobe.com/rw/SysConfig/WebPortal/BostonGlobe/Framework/images/favicon.ico' />
+
+    </head>
+    <body style='height: auto;'>
+
+
+
+        <!-- *** DO NOT DELETE *** -->
+        <div id='globe-graphic-container' style='height: 100%; overflow: hidden;'>
+
+            <!--
+            ==========================
+            BEGIN: GRAPHIC CODE HERE
+            ==========================
+            -->
+                <div class = 'graphichead'>Boston Calling</div>
+                    <p class = 'subtitle'>In their second year at the 16-acre Harvard Athletic Complex site, Boston Calling organizers hope improvements yield shorter lines and better access to all the attractions.</p>
+
+                <div class = 'container'>
+
+                    <div id = "map"></div>
+                    <div class = "legend">
+
+
+                            <div class = "icon">
+                                <div class= "text">Green Stage</div>
+                                <div class = "image">
+                                    <img src="assets/greenStage.svg" height="25" width="25">
+                                </div>
+                            </div>
+                            <div class = "icon">
+                                <div class= "text">Blue Stage</div>
+                                <div class = "image">
+                                    <img src="assets/blueStage.svg" height="25" width="25">
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class = "icon">
+                                <div class= "text">Red Stage</div>
+                                <div class = "image">
+                                    <img src="assets/redStage.svg" height="25" width="25">
+                                </div>
+                            </div>
+
+                            <div class = "icon">
+                                <div class= "text">Arena</div>
+                                <div class = "image">
+                                    <img src="assets/arena.svg" height="25" width="25">
+                                </div>
+                            </div>
+
+
+                            <div class = "icon">
+                                <div class= "text">Beverage</div>
+                                <div class = "image">
+                                    <img src="assets/beverage.png" height="25" width="25">
+                                </div>
+                            </div>
+
+                            <div class = "icon">
+                                <div class= "text">Food</div>
+                                <div class = "image">
+                                    <img src="assets/food.png" height="25" width="25">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class = "icon">
+                                <div class= "text">Comfort Station/Lost & Found/Festival Information</div>
+                                <div id= "comfort" class = "image">
+                                    <img src="assets/comfort.png" height="25" width="25">
+                                </div>
+                            </div>
+
+                            <div class = "icon">
+                                <div class= "text">Sponsor Areas</div>
+                                <div class = "image">
+                                    <img src="assets/sponsor.png" height="25" width="25">
+                                </div>
+                            </div>
+
+
+                            <div class = "icon">
+                                <div class= "text">Restrooms</div>
+                                <div class = "image">
+                                    <img src="assets/restrooms.png" height="25" width="25">
+                                </div>
+                            </div>
+
+                            <div class = "icon">
+                                <div class= "text">VIP Areas</div>
+                                <div class = "image">
+                                    <img src="assets/vip.png" height="25" width="25">
+                                </div>
+                            </div>
+
+
+
+
+                            <div class = "icon">
+                                <div class= "text">Plantinum Area</div>
+                                <div class = "image">
+                                    <img src="assets/plantinum.png" height="25" width="25">
+                                </div>
+                            </div>
+
+                            <div class = "icon">
+                                <div class= "text">Wi-Fi</div>
+                                <div class = "image">
+                                    <img src="assets/wifi.png" height="25" width="25">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- begin ai2html here DO NOT MODIFY THIS LINE -->
+
+            <!-- end ai2html here DO NOT MODIFY THIS LINE -->
+
+            <div class='source-and-credit'>
+                <p class='source'><span>SOURCE: Source</span></p>
+                <p class='credit'><span>EUNICE ESOMONU/ Globe Staff</span></p>
+            </div>
+
+            <!--
+            ==========================
+            END OF GRAPHIC CODE
+            ==========================
+            -->
+
+        </div>
+
+        <!-- (begin) put js libraries here -->
+
+        <!-- (end) -->
+
+        <!--
+        ============================
+        *** DO NOT GO BELOW HERE ***
+        ============================
+        -->
+
+
+        <!-- (begin) globe iframe embed -->
+        <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+           integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+           crossorigin=""></script>
+        <script src="leaflet.awesome-markers.js"></script>
+        <script src="=leaflet.awesome-markers.min.js"></script>
+        <script src='https://apps.bostonglobe.com/common/js/pym/pym-1.3.2.min.js'></script>
+        <script>
+            // version
+            if (window.console && console.log) console.log('-- globe iframe graphic v2.0.3 --');
+            (function() {
+                var d = new Date();
+                var timestamp = d.getTime();
+                var js = 'main.js?v=' + timestamp;
+                loadJS(js, function() {
+                    window.pymChild = pym.Child({ renderCallback: window.onResize, polling: true });
+                    pymChild.onMessage('enter-view', window.enterView);
+                    pymChild.sendMessage('ready', true);
+                });
+            })();
+        </script>
+        <!-- (end) globe iframe embed -->
+    </body>
+</html>
